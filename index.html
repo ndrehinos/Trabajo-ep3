@@ -1,178 +1,394 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto de Innovación en Paraderos Públicos</title>
-    <style>
-        /* Estilos Básicos */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+    <title>Sweet Cake</title>
 
-        body {
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-        /* Encabezado y Navegación */
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css">
 
-        header h1 {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-        }
+    <link rel="stylesheet" href="style2.css">
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 0.5rem;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ffc107;
-        }
-
-        /* Secciones */
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        section h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #333;
-            text-align: center;
-        }
-
-        section p {
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        section img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 1rem auto;
-        }
-
-        /* Formulario de Contacto */
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        form input, form textarea {
-            padding: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        form button {
-            padding: 0.5rem;
-            border: none;
-            background-color: #333;
-            color: #fff;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background-color: #444;
-        }
-
-        /* Pie de Página */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
 </head>
+
 <body>
-    <!-- Menú de Navegación -->
-    <header>
-        <h1>Las consecuencias de las extorciones hacia los transportistas</h1>
-        <nav>
-            <a href="#home">Inicio</a>
-            <a href="#comunidad">Comunidad</a>
-            <a href="#problema">Problema</a>
-            <a href="#solucion">Solución</a>
-            <a href="#contacto">Contacto</a>
+
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <h1 class="logoName">Sweet Cake </h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
+            <a href="#blogs">blogs</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
         </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
     </header>
+    <!-- header section end here  -->
 
-    <!-- Sección de Inicio -->
-    <section id="home">
-        <p>
-
-
-
-
-            
-        </p>
+    <!-- home section start here  -->
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Delicious Cake for Everyone </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum excepturi doloribus, fuga quod deserunt
+                recusandae?</p>
+            <div class="home-btn">
+                <a href="#"><button>see more</button></a>
+            </div>
+        </div>
     </section>
 
-    <!-- Sección de Comunidad -->
-    <section id="comunidad">
-        <h2>Comunidad</h2>
-        <p>
-            Los paros de transporte afectan principalmente a las zonas del norte y sur de Lima, donde miles de ciudadanos dependen de las líneas de buses para llegar a sus lugares de trabajo, estudio y otras actividades diarias. La falta de transporte durante las protestas genera una gran incomodidad y afecta la productividad y el bienestar de la comunidad.
-        </P>
-        <img src="NVIS2S2EYFF2BEWKOW3I463JBE.avif" alt="Mapa de la comunidad">
+    <!-- home section end here  -->
+
+    <!-- product section start here  -->
+    <section class="product" id="product">
+        <div class="heading">
+            <h2>Our Exclusive Products</h2>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci reiciendis assumenda.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci reiciendis assumenda.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci reiciendis assumenda.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake2.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci reiciendis assumenda.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci reiciendis assumenda.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci reiciendis assumenda.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci reiciendis assumenda.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake2.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci reiciendis assumenda.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 
-    <!-- Sección del Problema -->
-    <section id="problema">
-        <h2> Problema</h2>
-        <p>La creciente ola de extorsiones y violencia en el sector del transporte público ha causado la paralización de más de 30 empresas, lo que genera una grave crisis de movilidad en la ciudad. Los usuarios de las rutas más afectadas se ven obligados a esperar largos periodos en paraderos sin la certeza de que podrán abordar un bus."
+    <!-- product section end here  -->
 
-            Incluir imágenes de los paraderos congestionados y de la situación que viven los usuarios será clave. También puedes agregar testimonios de los afectados o datos obtenidos de las entrevistas o fuentes confiables.</p>
-        <img src="MRCXHBPISVBSBOKTKOFME6IK5E.avif" alt="Imagen del problema en el paradero">
+    <!-- blogs section start here  -->
+    <section class="blogs" id="blogs">
 
+        <div class=" swiper blogs-row">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/blog-img1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Caramel Bourbon Vanilla Cupcakes </h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
+                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
+                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
+                            eaque at.</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/blog-img2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Caramel Bourbon Vanilla Cupcakes </h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
+                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
+                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
+                            eaque at.</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/blog-img2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Caramel Bourbon Vanilla Cupcakes </h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
+                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
+                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
+                            eaque at.</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+
+        </div>
     </section>
 
-    <!-- Sección de Solución -->
-    <section id="solucion">
-        <h2> Solución</h2>
-        <p>Una posible solución para mejorar la situación podría incluir la creación de paraderos más seguros y eficientes, la implementación de tecnología para optimizar el flujo de transporte y mejorar la seguridad para los conductores y usuarios."
+    <!-- blogs section ends here  -->
 
-            Aquí puedes incluir diagramas, propuestas visuales de los paraderos, o esquemas que muestren cómo cambiaría la estructura del sistema de transporte o cómo se implementaría la seguridad. Asegúrate de destacar que es una propuesta preliminar.</p>
-        <img src="download.jpg" alt="Prototipo de la solución propuesta">
-    </section>
+    <!-- newsletter section start here  -->
 
-    <!-- Sección de Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p></p>
-        <form action="#">
-            <input type="text" name="nombre" placeholder="Tu Nombre" required>
-            <input type="text" name="telefono" placeholder="Telefono" required>
-            <input type="email" name="email" placeholder="Tu Correo" required>
-            <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-            <button type="submit">Enviar</button>
+    <section class="newsletter">
+        <form action="">
+            <h3></h3>
+            <input type="email" name="" placeholder="Escribe tu email" id="" class="box">
+            <input type="button" value="Enviar" class="box2">
         </form>
     </section>
+    <!-- newsletter section ends here  -->
 
-    <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2024 Proyecto de Innovación en Paraderos Públicos</p>
+    <!-- review section start here  -->
+    <section class="review" id="review">
+        <div class="heading">
+            <h2>Opiniones de clientes</h2>
+        </div>
+
+
+        <div class=" swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
+                            quasi eveniet aliquam sed?</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client 2.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Hardy Devid</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
+                            quasi eveniet aliquam sed?</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client 2.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Hardy Devid</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
+                            quasi eveniet aliquam sed?</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client 2.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Hardy Devid</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, perferendis architecto
+                            quasi eveniet aliquam sed?</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client1.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Hardy Devid</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+    <!-- review section ends here  -->
+
+    <!-- footer section start here  -->
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <h1 class="logoName"> Sweet Cake </h1>
+                </div>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus maxime quod.</p>
+
+            </div>
+         
+          
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class="fas fa-phone"></i>+91 12222 34444</a>
+                <a href="#"> <i class="fas fa-envelope"></i>dannydesigner@gmail.com</a>
+
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">
+            created by <span>Carlos Hinostroza Altamirano </span> |all rights reserved ! 
+        </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+
+
 </body>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=5195508107&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+  
+  
+
 </html>
